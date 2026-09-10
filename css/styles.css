@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+.calendar-container {
+    width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+.calendar-grid {
+    display: grid;
+    /* 7 columnas iguales usando repeat() y la unidad fr (fracción) */
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 5px; /* Espaciado horizontal y vertical entre celdas */
+}
+.day-header {
+    background-color: #f0f2f5;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    color: #495057;
+}
+.day-cell {
+    border: 1px solid #dee2e6;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    color: #212529;
+}
